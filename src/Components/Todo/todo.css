@@ -1,0 +1,30 @@
+.todo-item {
+  width: 98%;
+  padding: 8px 6px;
+  margin: 4px 0px;
+  background-color: rgba(238, 235, 235, 0.753);
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+}
+
+.todo-content {
+  width: 93%;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.delete-section {
+  width: 6%;
+}
+
+.delete-icon {
+  color: black;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  color: red;
+}

@@ -1,38 +1,67 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(228, 154, 164);
+}
+
+.header {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.863);
+  margin: 12px 0px;
+}
+
+.input-area {
+  display: flex;
+  padding: 4px 2px;
+}
+
+.input-box {
+  width: 25vw;
+  padding: 4px 6px;
+  margin-right: 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.add-btn {
+  padding: 6px 8px;
+  margin-left: 4px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
   color: white;
+  outline: none;
+  border: none;
+  background-color: rgba(248, 31, 60, 0.637);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 4px;
+  /* background-color: cornflowerblue; */
+  max-height: 70vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.todo-container::-webkit-scrollbar-thumb {
+  background: rgba(248, 31, 60, 0.637);
 }
